@@ -61,7 +61,7 @@ function showResults() {
   let numCorrect = 0;
 
   // for each question...
-  myQuestions.forEach((currentQuestion, questionNumber) => {
+  myQuestions.forEach((/* FIXME*/, /* FIXME*/) => {
     const answerContainer = answerContainers[questionNumber];
     const selector = `input[name=question${questionNumber}]:checked`;
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
